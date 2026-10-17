@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f7fafc;
+    color: #2d3748;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    position: relative;
+}
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.header h2 { font-size: 22px; color: #1a202c; }
+.header p { font-size: 13px; color: #718096; letter-spacing: 0.5px; }
+
+.alert-box {
+    background-color: #fffaf0;
+    border: 1px solid #feebc8;
+    color: #c05621;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    position: relative;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+    background: #fff;
+}
+.form-control:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+}
+
+/* Buscador de Agencia con Icono y Botón de Limpiar */
+.agency-search-wrapper {
+    position: relative;
+}
+.input-search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.search-icon {
+    position: absolute;
+    left: 12px;
+    font-size: 14px;
+    color: #a0aec0;
+    pointer-events: none;
+}
+.search-input {
+    padding-left: 36px !important;
+    padding-right: 36px !important;
+}
+.btn-clear {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    color: #a0aec0;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px;
+}
+.btn-clear:hover {
+    color: #4a5568;
+}
+
+/* Lista Desplegable flotante */
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 240px;
+    overflow-y: auto;
+    background: #ffffff;
+    border: 1.5px solid #e2e8f0;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+.dropdown-item {
+    padding: 10px 14px;
+    border-bottom: 1px solid #f0f4f8;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+.dropdown-item:hover {
+    background-color: #edf2f7;
+}
+.item-title {
+    font-size: 13px;
+    color: #2d3748;
+    font-weight: 500;
+}
+.item-title strong {
+    color: #3182ce;
+}
+.item-address {
+    font-size: 11px;
+    color: #718096;
+    margin-top: 3px;
+}
+.dropdown-no-results {
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #718096;
+    background: #fff;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    background: #3182ce;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s;
+    text-align: center;
+    text-decoration: none;
+}
+.btn:hover { background: #2b6cb0; }
+.btn-whatsapp { background: #25d366; margin-top: 15px; }
+.btn-whatsapp:hover { background: #1ebc59; }
+
+/* Resumen */
+.resumen-box {
+    border: 1px dashed #cbd5e0;
+    padding: 18px;
+    border-radius: 8px;
+    background: #f8fafc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.status-badge {
+    text-align: center;
+    color: #38a169;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.login-card {
+    max-width: 420px;
+}
+.login-footer {
+    text-align: center;
+    margin-top: 18px;
+}
+.forgot-link {
+    color: #3182ce;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.forgot-link:hover {
+    text-decoration: underline;
+}
+.alert-success {
+    background-color: #f0fff4 !important;
+    border: 1px solid #c6f6d5 !important;
+    color: #276749 !important;
+}
+.alert-danger {
+    background-color: #fff5f5 !important;
+    border: 1px solid #fed7d7 !important;
+    color: #9b2c2c !important;
+}
